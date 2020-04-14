@@ -12,35 +12,35 @@ Take one down and pass it around, 98 bottles of beer on the wall.
     expect(subject.verse(99)).toEqual(expected);
   });
 
-  xit("tests another verse", function() {
+  it("tests another verse", function() {
     const expected = `89 bottles of beer on the wall, 89 bottles of beer.
 Take one down and pass it around, 88 bottles of beer on the wall.
 `;
     expect(subject.verse(89)).toEqual(expected);
   });
 
-  xit("verse two", function() {
+  it("verse two", function() {
     const expected = `2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
 `;
     expect(subject.verse(2)).toEqual(expected);
   });
 
-  xit("verse one", function() {
+  it("verse one", function() {
     const expected = `1 bottle of beer on the wall, 1 bottle of beer.
 Take it down and pass it around, no more bottles of beer on the wall.
 `;
     expect(subject.verse(1)).toEqual(expected);
   });
 
-  xit("verse zero", function() {
+  it("verse zero", function() {
     const expected = `No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 `;
     expect(subject.verse(0)).toEqual(expected);
   });
 
-  xit("a few verses", function() {
+  it("a few verses", function() {
     const expected = `2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
 
@@ -54,7 +54,7 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
     expect(subject.verses(2, 0)).toEqual(expected);
   });
 
-  xit("the whole song", function() {
+  it("the whole song", function() {
     const expected = `99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
